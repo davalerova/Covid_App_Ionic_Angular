@@ -1,17 +1,48 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="covid-home">
+  <div class="header">
+    <input class="header__input" placeholder="Buscar" type="text" >
+    <div class="header__title">
+      Resumen
+    </div>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="content-summary">
+    <div class="content-summary__icon-global"></div>
+    <div class="content-summary__detail">
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Total de casos</div>
+        <div class="content-summary__detail__item__total">5.593.728</div>
+        <div class="content-summary__detail__item__new">+550</div>
+      </div>
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Recuperados</div>
+        <div class="content-summary__detail__item__total">5.593.728</div>
+      </div>
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Muertes</div>
+        <div class="content-summary__detail__item__total">5.593.728</div>
+        <div class="content-summary__detail__item__new">+550</div>
+      </div>
+    </div>
+  </div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <div class="col-summary">
+    <div class="col-summary__box">
+      <img class="col-summary__box__flag" src="https://flagcdn.com/co.svg" alt="">
+      <div class="col-summary__box__title">Total de casos</div>
+      <div class="col-summary__box__total">11.613</div>
+      <div class="col-summary__box__new">+550</div>
+    </div>
+    <div class="col-summary__box">
+      <img class="col-summary__box__icon" src="../../assets/icon/ico-recovered.svg" alt="">
+      <div class="col-summary__box__title">Recuperados</div>
+      <div class="col-summary__box__total">2.852</div>
+    </div>
+    <div class="col-summary__box">
+      <img class="col-summary__box__icon" src="../../assets/icon/ico-death.svg" alt="">
+      <div class="col-summary__box__title">Muertes</div>
+      <div class="col-summary__box__total">11.613</div>
+      <div class="col-summary__box__new">+16</div>
+    </div>
+  </div>
 </ion-content>
