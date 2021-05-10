@@ -1,0 +1,34 @@
+<ion-content class="covid-detail-countries">
+  <div class="covid-detail-countries__back" (click)="back()" ></div>
+  <div class="covid-detail-countries__title">
+    Países
+  </div>
+
+  <div class="content-summary" *ngFor="let item of countries">
+    <div class="content-summary__content">      
+      <div class="content-summary__content__label">{{item.Country}}</div>
+        <img class="content-summary__content__flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>
+    </div>
+    <div class="content-summary__detail">
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Total de casos</div>
+        <div class="content-summary__detail__item__total">{{item.TotalConfirmed.toLocaleString()}}</div>
+        <div class="content-summary__detail__item__new">+{{item.NewConfirmed.toLocaleString()}}</div>
+      </div>
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Recuperados</div>
+        <div class="content-summary__detail__item__total">{{item.TotalRecovered.toLocaleString()}}</div>
+        <div class="content-summary__detail__item__new">+{{item.NewRecovered.toLocaleString()}}</div>
+      </div>
+      <div class="content-summary__detail__item">
+        <div class="content-summary__detail__item__title">Muertes</div>
+        <div class="content-summary__detail__item__total">{{item.TotalDeaths.toLocaleString()}}</div>
+        <div class="content-summary__detail__item__new">+{{item.NewDeaths.toLocaleString()}}</div>
+      </div>
+    </div>
+  
+  </div>
+
+
+  
+</ion-content>

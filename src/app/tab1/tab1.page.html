@@ -11,17 +11,18 @@
     <div class="content-summary__detail">
       <div class="content-summary__detail__item">
         <div class="content-summary__detail__item__title">Total de casos</div>
-        <div class="content-summary__detail__item__total">5.593.728</div>
-        <div class="content-summary__detail__item__new">+550</div>
+        <div class="content-summary__detail__item__total">{{totalConfirmed}}</div>
+        <div class="content-summary__detail__item__new">+{{totalNewConfirmed}}</div>
       </div>
       <div class="content-summary__detail__item">
         <div class="content-summary__detail__item__title">Recuperados</div>
-        <div class="content-summary__detail__item__total">5.593.728</div>
+        <div class="content-summary__detail__item__total">{{totalRecovered}}</div>
+        <div class="content-summary__detail__item__new">+{{totalNewRecovered}}</div>
       </div>
       <div class="content-summary__detail__item">
         <div class="content-summary__detail__item__title">Muertes</div>
-        <div class="content-summary__detail__item__total">5.593.728</div>
-        <div class="content-summary__detail__item__new">+550</div>
+        <div class="content-summary__detail__item__total">{{totalDeaths}}</div>
+        <div class="content-summary__detail__item__new">+{{totalNewDeaths}}</div>
       </div>
     </div>
   </div>
@@ -30,19 +31,60 @@
     <div class="col-summary__box">
       <img class="col-summary__box__flag" src="https://flagcdn.com/co.svg" alt="">
       <div class="col-summary__box__title">Total de casos</div>
-      <div class="col-summary__box__total">11.613</div>
-      <div class="col-summary__box__new">+550</div>
+      <div class="col-summary__box__total">{{totalConfirmedCol}}</div>
+      <div class="col-summary__box__new">+{{totalNewConfirmedCol}}</div>
     </div>
     <div class="col-summary__box">
       <img class="col-summary__box__icon" src="../../assets/icon/ico-recovered.svg" alt="">
       <div class="col-summary__box__title">Recuperados</div>
-      <div class="col-summary__box__total">2.852</div>
+      <div class="col-summary__box__total">{{totalRecoveredCol}}</div>
+      <div class="col-summary__box__new">+{{totalNewRecoveredCol}}</div>
     </div>
     <div class="col-summary__box">
       <img class="col-summary__box__icon" src="../../assets/icon/ico-death.svg" alt="">
       <div class="col-summary__box__title">Muertes</div>
-      <div class="col-summary__box__total">11.613</div>
-      <div class="col-summary__box__new">+16</div>
+      <div class="col-summary__box__total">{{totalDeathsCol}}</div>
+      <div class="col-summary__box__new">+{{totalNewDeathsCol}}</div>
+    </div>
+  </div>
+  <div class="countries-title">
+    <div class="countries-title__lebel">
+      Top Países
+    </div>
+    <div class="countries-title__link" (click)="detailCountries()">
+      Ver todos
+    </div>
+  </div>
+  <div class="countries">
+    <div class="countries__box">
+      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
+      
+      <div class="countries__box__label">
+        {{topOneCountry}}
+      </div>
+      <div class="countries__box__new">
+        {{topOneTotalConfirmed}}
+      </div>
+    </div>
+    <div class="countries__box">
+      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
+      
+      <div class="countries__box__label">
+        {{topTwoCountry}}
+      </div>
+      <div class="countries__box__new">
+        {{topTwoTotalConfirmed}}
+      </div>
+    </div>
+    <div class="countries__box">
+      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
+      
+      <div class="countries__box__label">
+        {{topThreeCountry}}
+      </div>
+      <div class="countries__box__new">
+        {{topThreeTotalConfirmed}}
+      </div>
     </div>
   </div>
 </ion-content>
