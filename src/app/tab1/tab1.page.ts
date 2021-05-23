@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CovidAPIService } from '../services/covid-api.service';
+import { LoadingController } from '@ionic/angular';
+import { OrderPipe } from 'ngx-order-pipe';
+
 
 @Component({
   selector: 'app-tab1',
@@ -23,20 +26,34 @@ export class Tab1Page implements OnInit{
   totalDeathsCol;
   totalNewDeathsCol;
   countries;
-  topOneTotalConfirmed = 0;
-  topTwoTotalConfirmed = 0;
-  topThreeTotalConfirmed = 0;
+  topCountries;
+  topOneTotalConfirmed;
+  topTwoTotalConfirmed;
+  topThreeTotalConfirmed;
   topOneCountry;
   topTwoCountry;
   topThreeCountry;
   topOneCountryCode;
   topTwoCountryCode;
   topThreeCountryCode;
+  i;
 
-  constructor(private route: Router, private myApi: CovidAPIService) {}
-  ngOnInit() {
+  constructor(
+    private route: Router, 
+    private myApi: CovidAPIService,
+    public loadingController: LoadingController,
+    private orderPipe : OrderPipe
+    ) {}
+  async ngOnInit() {
+    const loading = await this.loadingController.create({
+      cssClass: 'my-custom-class',
+      message: 'Please wait...'
+    });
+    await loading.present();
+
+
     this.myApi.getSummary().subscribe(resp=>{
-      this.countries = resp.Countries;
+      this.countries = this.orderPipe.transform(resp.Countries, 'TotalConfirmed', true);
       this.totalConfirmed = resp.Global.TotalConfirmed.toLocaleString();
       this.totalNewConfirmed = resp.Global.NewConfirmed.toLocaleString();
       this.totalRecovered = resp.Global.TotalRecovered.toLocaleString();
@@ -44,26 +61,28 @@ export class Tab1Page implements OnInit{
       this.totalNewRecovered = resp.Global.NewRecovered.toLocaleString();
       this.totalDeaths = resp.Global.TotalDeaths.toLocaleString();
       this.totalNewDeaths = resp.Global.NewDeaths.toLocaleString();
-      
+      this.i = 0;
       for(let col of this.countries){
-        if(col.TotalConfirmed > this.topThreeTotalConfirmed){
-          if(col.TotalConfirmed > this.topTwoTotalConfirmed){
-            if(col.TotalConfirmed > this.topOneTotalConfirmed){
-              this.topOneTotalConfirmed = col.TotalConfirmed;
-              this.topOneCountry = col.Country;
-              this.topOneCountryCode =col.CountryCode;
-            }
-            else {
-              this.topTwoTotalConfirmed = col.TotalCofirmed;
-              this.topTwoCountry = col.Country;
-              this.topTwoCountryCode =col.CountryCode;
-            }
+        if(this.i==0){
+          
+          this.topOneTotalConfirmed = col.TotalConfirmed;
+          this.topOneCountry = col.Country;
+          this.topOneCountryCode =col.CountryCode;
+          this.i++;
           }
-          else {
-            this.topThreeTotalConfirmed = col.TotalConfirmed;
-            this.topThreeCountry = col.Country;
-            this.topThreeCountryCode =col.CountryCode;
-          }
+        else if(this.i==1){
+          this.topTwoTotalConfirmed = col.TotalConfirmed;
+          this.topTwoCountry = col.Country;
+          this.topTwoCountryCode =col.CountryCode;
+          this.i++;
+        
+        }
+        else if(this.i==2){{
+          this.topThreeTotalConfirmed = col.TotalConfirmed;
+          this.topThreeCountry = col.Country;
+          this.topThreeCountryCode =col.CountryCode;
+          this.i++;
+        }
         }
         if(col.Country == "Colombia"){
           this.totalConfirmedCol = col.TotalConfirmed.toLocaleString();
@@ -75,7 +94,8 @@ export class Tab1Page implements OnInit{
           this.totalNewDeathsCol = col.NewDeaths.toLocaleString();
         }
       }
-
+      console.log(resp)
+      loading.dismiss();
     });
   }
   detailCountries(){

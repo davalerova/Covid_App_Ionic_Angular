@@ -55,35 +55,15 @@
       Ver todos
     </div>
   </div>
-  <div class="countries">
-    <div class="countries__box">
-      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
+  <div class="countries" >
+    <div class="countries__box"*ngFor="let item of countries | slice:0:3">
+      <img class="countries__box__flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>
       
       <div class="countries__box__label">
-        {{topOneCountry}}
+        {{item.Country}}
       </div>
       <div class="countries__box__new">
-        {{topOneTotalConfirmed}}
-      </div>
-    </div>
-    <div class="countries__box">
-      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
-      
-      <div class="countries__box__label">
-        {{topTwoCountry}}
-      </div>
-      <div class="countries__box__new">
-        {{topTwoTotalConfirmed}}
-      </div>
-    </div>
-    <div class="countries__box">
-      <img class="countries__box__flag" src="https://flagcdn.com/co.svg" alt="">
-      
-      <div class="countries__box__label">
-        {{topThreeCountry}}
-      </div>
-      <div class="countries__box__new">
-        {{topThreeTotalConfirmed}}
+        {{item.TotalConfirmed.toLocaleString()}}
       </div>
     </div>
   </div>
