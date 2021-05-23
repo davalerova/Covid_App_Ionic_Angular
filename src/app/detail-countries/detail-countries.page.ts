@@ -10,12 +10,6 @@ import { CovidAPIService } from '../services/covid-api.service';
 export class DetailCountriesPage implements OnInit {
 
   countries;
-  totalConfirmed;
-  totalNewConfirmed;
-  totalRecovered;
-  totalNewRecovered;
-  totalDeaths;
-  totalNewDeaths;
 
 
   constructor(private router: Router, private myApi: CovidAPIService) { }
@@ -25,13 +19,6 @@ export class DetailCountriesPage implements OnInit {
     this.myApi.getSummary().subscribe(resp=>{
       console.log(resp.Countries);
       this.countries = resp.Countries;
-      this.totalConfirmed = resp.Global.TotalConfirmed;
-      this.totalNewConfirmed = resp.Global.NewConfirmed;
-      this.totalRecovered = resp.Global.TotalRecovered;
-      this.totalNewRecovered = resp.Global.NewRecovered;
-      this.totalNewRecovered = resp.Global.NewRecovered;
-      this.totalDeaths = resp.Global.TotalDeaths;
-      this.totalNewDeaths = resp.Global.NewDeaths;
 
     });
     
