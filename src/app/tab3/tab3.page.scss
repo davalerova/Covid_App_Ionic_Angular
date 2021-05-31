@@ -1,0 +1,105 @@
+.covid-sint{
+  display: flex;
+  justify-content: space-between;
+  &__title{
+      font-family: OpenSans;
+      font-size: 24px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: left;
+      color: #10133d;
+      margin: 28px 16px 16px 16px;
+      margin-left: 16px;
+      margin-bottom: 16px;
+  }
+
+  &__contenedor_principal{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 45%;
+      width: 66%;
+      margin: 1% 1%;
+      background-image: url(../../assets/icon/new-6.svg);
+      margin-left: 60px;
+
+    }
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 28px;
+
+  &__col {
+      margin: 0 0;
+      justify-content: center;
+      align-items: center;
+    &__marco{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      //margin-top: 30px;
+      background-color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      box-shadow: 2px 2px 2px 2px rgba(51,51,51, 0.2);
+      //margin-left: 20px;
+
+
+      &__icon_5{
+        text-align: center;
+          background-image: url(../../assets/icon/new-7.svg);
+          width: 13px;
+          height:36px;
+      }
+      &__icon_6{
+          background-image: url(../../assets/icon/new-8.svg);
+          width: 23.8px;
+          height: 26.2px;
+      }
+      &__icon_7{
+          background-image: url(../../assets/icon/new-9.svg);
+          width: 29px;
+          height:33px;
+      }
+      &__icon_8{
+          background-image: url(../../assets/icon/new-10.svg);
+          width: 36px;
+          height: 31px;
+      }
+      &__icon_9{
+          background-image: url(../../assets/icon/new-11.svg);
+          width: 36px;
+          height:32px;
+      }
+      &__icon_10{
+          background-image: url(../../assets/icon/new-12.svg);
+          width: 28px;
+          height:31px;
+      }
+
+  }
+  &__subtitle{
+      align-self:center;
+      margin:auto;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-align: center;
+      font-family: OpenSans;
+      font-size: 10px;
+      color: #333333;
+  }
+  }
+
+}
+
+
+}

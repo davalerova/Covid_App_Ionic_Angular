@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Noticias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let myNews of dataNews">
+    <img [src]= "myNews.urlToImage" />
+    <ion-card-header>
+      <ion-card-subtitle>{{myNews.date}}</ion-card-subtitle>
+      <ion-card-title>{{myNews.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      {{myNews.description}}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

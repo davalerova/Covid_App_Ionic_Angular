@@ -1,1 +1,38 @@
 
+.bar{
+    &__home-icon{
+        background-image: url('../../assets/icon/home-icon-sm.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        //margin: 0 36.1px 0 0;
+    }
+    &__hospital-icon{
+        background-image: url('../../assets/icon/hospital-icon.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+    &__global-icon{
+        background-image: url('../../assets/icon/global-icon.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    &__news-paper-icon{
+        background-image: url('../../assets/icon/news-paper-icon.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+    &__phone-icon{
+        background-image: url('../../assets/icon/phone-icon.svg');
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+}

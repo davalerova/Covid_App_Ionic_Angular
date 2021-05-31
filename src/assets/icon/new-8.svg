@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34.414" height="27.418" viewBox="0 0 34.414 27.418">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Trazado_597" data-name="Trazado 597" d="M5.763-2.395V-5.44C5.726-5.976,3.978-8.371,3.32-9.273c-.283-.389-.56-.769-.815-1.128A11.8,11.8,0,0,1,.9-19.546a9.636,9.636,0,0,1,5.155-6.4,12.414,12.414,0,0,1,5.655-1.456,10.84,10.84,0,0,1,8.283,3.97A9.382,9.382,0,0,1,21.872-17.2a1.44,1.44,0,0,0,.357.983l1.678,1.943a2.061,2.061,0,0,1,.477,1.633,2.057,2.057,0,0,1-.914,1.431l-.979.653v3.347A2.941,2.941,0,0,1,19.563-4.28L17.9-4.246v1.851a1.173,1.173,0,0,1-1.172,1.172h-9.8A1.174,1.174,0,0,1,5.763-2.395" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_599" data-name="Trazado 599" d="M26.165-11.27l4.722-3.507a1.971,1.971,0,0,1,2.757.408,1.97,1.97,0,0,1-.408,2.756,1.993,1.993,0,0,1-.858.364l-5.8.945a.538.538,0,0,1-.619-.446.538.538,0,0,1,.211-.52" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Trazado_601" data-name="Trazado 601" d="M27.032-8.9,32.9-9.281A1.972,1.972,0,0,1,35-7.442a1.971,1.971,0,0,1-1.839,2.094,1.987,1.987,0,0,1-.917-.161L26.851-7.865a.541.541,0,0,1-.279-.711.544.544,0,0,1,.46-.323" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Trazado_603" data-name="Trazado 603" d="M26.095-6.978l4.789,3.415a1.97,1.97,0,0,1,.461,2.749,1.971,1.971,0,0,1-2.749.46,1.989,1.989,0,0,1-.609-.705L25.3-6.291a.539.539,0,0,1,.234-.727.539.539,0,0,1,.559.04" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_466" data-name="Grupo 466" transform="translate(-0.586 27.406)">
+    <g id="Grupo_462" data-name="Grupo 462" clip-path="url(#clip-path)">
+      <path id="Trazado_596" data-name="Trazado 596" d="M-4.414-32.406H29.4V3.777H-4.414Z" fill="#234d8f"/>
+    </g>
+    <g id="Grupo_463" data-name="Grupo 463" clip-path="url(#clip-path-2)">
+      <path id="Trazado_598" data-name="Trazado 598" d="M20.947-20.165H39.032V-5.3H20.947Z" fill="#509ecb"/>
+    </g>
+    <g id="Grupo_464" data-name="Grupo 464" clip-path="url(#clip-path-3)">
+      <path id="Trazado_600" data-name="Trazado 600" d="M21.527-14.285H40V-.344H21.527Z" fill="#509ecb"/>
+    </g>
+    <g id="Grupo_465" data-name="Grupo 465" clip-path="url(#clip-path-4)">
+      <path id="Trazado_602" data-name="Trazado 602" d="M20.242-12.078H36.711V5.012H20.242Z" fill="#509ecb"/>
+    </g>
+  </g>
+</svg>

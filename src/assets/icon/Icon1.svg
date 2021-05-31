@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20.885" height="24" viewBox="0 0 20.885 24">
+  <g id="home-icon" transform="translate(-231 -574.656)">
+    <g id="Grupo_16" data-name="Grupo 16" transform="translate(231 574.656)">
+      <g id="Grupo_15" data-name="Grupo 15" transform="translate(0 0)">
+        <g id="Grupo_14" data-name="Grupo 14" transform="translate(0 0)">
+          <path id="Trazado_14" data-name="Trazado 14" d="M94.538,74H88.192a.346.346,0,0,1-.346-.346V66.731a3.346,3.346,0,0,0-6.692,0v6.923a.346.346,0,0,1-.346.346H74.346A.346.346,0,0,1,74,73.654V59.231a.346.346,0,0,1,.118-.261l10.154-8.885a.346.346,0,0,1,.457,0l10.038,8.885a.346.346,0,0,1,.117.259V73.654A.346.346,0,0,1,94.538,74Zm-6-.692h5.654V59.387L84.5,50.807l-9.806,8.581v13.92h5.769V66.731a4.038,4.038,0,1,1,8.077,0Z" transform="translate(-74 -50)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

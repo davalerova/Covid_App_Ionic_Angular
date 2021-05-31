@@ -1,0 +1,139 @@
+.prevencion{
+    
+    display: flex;
+    justify-content: space-between;
+    &__fondo{
+        margin: 30px;
+        background-image: url('../../assets/icon/new-1.svg');
+        background-repeat: no-repeat;
+        width: 315.2px;
+        height: 451.1px;
+        padding-top: 30px;
+        //margin: 0 36.1px 0 0;
+    }
+    
+}
+.recomendaciones{
+    margin: 16px;
+    
+    &__primer{
+        display: flex;
+        justify-content:center;
+        &__wash-hands{  
+            margin: 28px;
+            width: 112px;
+            height: 108px;
+            border-radius: 22px;
+            box-shadow: 0 0 6px 0 rgba(51, 51, 51, 0.1);
+            background-color: #ffffff;
+            
+            &__image{
+                margin: 28px;
+                background-image: url('../../assets/icon/wash-hands.svg');
+                background-repeat: no-repeat;
+                width: 56px;
+                height: 50.6px;
+                margin-bottom: 8px;
+            }
+            &__label{
+                font-family: OpenSans;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.38;
+                color: #10133d;
+                margin-bottom: 4px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        &__wear-mask-icon{
+            margin-left: 176px;
+            margin-top: -50px;
+            width: 112px;
+            height: 108px;
+            border-radius: 22px;
+            box-shadow: 0 0 6px 0 rgba(51, 51, 51, 0.1);
+            background-color: #ffffff;
+            
+            &__image{
+                margin-left: 28px;
+                background-image: url('../../assets/icon/wear-mask-icon.svg');
+                background-repeat: no-repeat;
+                width: 56px;
+                height: 50.6px;
+                margin-bottom: 8px;
+            }
+            &__label{
+                font-family: OpenSans;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.38;
+                color: #10133d;
+                margin-bottom: 4px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+    &__segundo{
+        margin-top: -100px;
+        display: flex;
+        justify-content:center;
+        &__family-icon{  
+            margin: 28px;
+            width: 112px;
+            height: 108px;
+            border-radius: 22px;
+            box-shadow: 0 0 6px 0 rgba(51, 51, 51, 0.1);
+            background-color: #ffffff;
+            
+            &__image{
+                margin: 28px;
+                background-image: url('../../assets/icon/family-icon.svg');
+                background-repeat: no-repeat;
+                width: 56px;
+                height: 50.6px;
+                margin-bottom: 8px;
+            }
+            &__label{
+                font-family: OpenSans;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.38;
+                color: #10133d;
+                margin-bottom: 4px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+        &__home-icon{
+            margin-left: 176px;
+            margin-top: -50px;
+            width: 112px;
+            height: 108px;
+            border-radius: 22px;
+            box-shadow: 0 0 6px 0 rgba(51, 51, 51, 0.1);
+            background-color: #ffffff;
+            
+            &__image{
+                margin-left: 28px;
+                background-image: url('../../assets/icon/home-icon.svg');
+                background-repeat: no-repeat;
+                width: 56px;
+                height: 50.6px;
+                margin-bottom: 8px;
+            }
+            &__label{
+                font-family: OpenSans;
+                font-size: 12px;
+                font-weight: bold;
+                line-height: 1.38;
+                color: #10133d;
+                margin-bottom: 4px;
+                margin-top: 20px;
+                text-align: center;
+            }
+        }
+    }
+    
+}
