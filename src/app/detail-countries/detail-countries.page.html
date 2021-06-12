@@ -3,8 +3,8 @@
   <div class="covid-detail-countries__title">
     Países
   </div>
-
-  <div class="content-summary" *ngFor="let item of countries">
+  <ion-searchbar showCancelButton="never" placeholder="Buscar" autocomplete="off" type="Search" [(ngModel)]="filterTerm" animated="true"></ion-searchbar>
+  <div class="content-summary" *ngFor="let item of countries | filter:filterTerm">
     <div class="content-summary__content">      
       <div class="content-summary__content__label">{{item.Country}}</div>
         <img class="content-summary__content__flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>

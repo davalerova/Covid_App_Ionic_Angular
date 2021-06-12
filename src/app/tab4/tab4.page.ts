@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiNewsService } from '../services/api-news.service';
 
 @Component({
   selector: 'app-tab4',
@@ -6,7 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['tab4.page.scss']
 })
 export class Tab4Page {
+  dataNews;
+  constructor(private myApi: ApiNewsService) {
 
-  constructor() {}
+  }
+  ngOnInit(){
+    this.myApi.getTopHeadLines().subscribe(resp=>{
+    this.dataNews = resp.articles;
+    })
+
+  }
 
 }

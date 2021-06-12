@@ -2,14 +2,14 @@
     background-color: var(--color-white);
     .header {
         padding: 0 16px;
-        height: 198px;
+        height: 150px;
         background-color: var(--color-primary);
         &__input {
             outline: none;
             border: none;
             background-color: transparent;
             color: var(--color-white);
-            border-bottom: solid 1px var(--color-white);
+            border-bottom: solid 1px var(--color-primary);
             width: 100%;
             margin-top: 54px;
             &::placeholder {
@@ -22,7 +22,7 @@
             color: var(--color-white);
             font-size: 20px;
             font-family: OpenSans;
-            margin-top: 24px;
+            margin-top: 5px;
         }
     }
     .content-summary {

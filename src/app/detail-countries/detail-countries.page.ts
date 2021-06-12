@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { CovidAPIService } from '../services/covid-api.service';
+import {OrderPipe} from 'ngx-order-pipe';
 
 @Component({
   selector: 'app-detail-countries',
@@ -12,7 +13,11 @@ export class DetailCountriesPage implements OnInit {
   countries;
 
 
-  constructor(private router: Router, private myApi: CovidAPIService) { }
+  constructor(
+    private router: Router, 
+    private myApi: CovidAPIService,
+    private orderPipe: OrderPipe
+    ) { }
 
 
   ngOnInit() {
@@ -25,6 +30,9 @@ export class DetailCountriesPage implements OnInit {
   }
   back(){
     this.router.navigate(['/tabs/tab1']);
+  }
+
+  search(event){
   }
 
 }

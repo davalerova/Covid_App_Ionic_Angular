@@ -1,6 +1,6 @@
 <ion-content class="covid-home">
   <div class="header">
-    <input class="header__input" placeholder="Buscar" type="text" >
+    <input class="header__input" placeholder="" type="text" >
     <div class="header__title">
       Resumen
     </div>
@@ -58,7 +58,7 @@
   <div class="countries" >
     <div class="countries__box"*ngFor="let item of countries | slice:0:3">
       <img class="countries__box__flag" [src]="'https://flagcdn.com/'+item.CountryCode.toLocaleLowerCase()+'.svg'"/>
-      
+
       <div class="countries__box__label">
         {{item.Country}}
       </div>

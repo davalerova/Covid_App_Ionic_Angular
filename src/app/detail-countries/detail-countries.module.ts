@@ -7,13 +7,15 @@ import { IonicModule } from '@ionic/angular';
 import { DetailCountriesPageRoutingModule } from './detail-countries-routing.module';
 
 import { DetailCountriesPage } from './detail-countries.page';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DetailCountriesPageRoutingModule
+    DetailCountriesPageRoutingModule,
+    Ng2SearchPipeModule
   ],
   declarations: [DetailCountriesPage]
 })
